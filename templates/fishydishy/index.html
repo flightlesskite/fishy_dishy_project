@@ -1,0 +1,58 @@
+{% extends 'fishydishy/base.html' %}
+{% load staticfiles %}
+
+{% block title_block %}
+	Fishy Dishy - Home
+{% endblock %}
+
+{% block body_block %}
+<div class="header">
+	<br><br>
+		<center><img src="{% static "images/fishydishyheader.jpg" %}" alt="Fishy Dishy Header" /></center>
+	</div>
+<div class="row">
+		<div class="col-lg-12" style="padding: 15px;"></div>
+	</div>
+	<div class="row">
+		<div class="col-lg-2" style="padding: 15px;">
+	</div>
+	<div class="col-lg-8" style="padding: 15px;">
+        <div>
+
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="{% static 'images/fishmongers.jpg' %}" alt="Fishmongers">
+    <div class="card-block">
+    <center><h2 class="card-title">Find Your Local Fishmongers</h2>
+      <p class="card-text">When it comes to buying fish, no one knows better than your local fish mongers. Get familiar with yours with our handy map!</p><br>
+
+     <a href="{% url 'fish_map' %}" class="btn" role="button">Go Fish >></a><br>
+
+    </center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'images/catch.jpg' %}" alt="Cod">
+    <div class="card-block">
+      <center><h2 class="card-title">Catch of the Day!</h2>
+      <p class="card-text">Flakey, meaty and rich in flavour, <b>Seabass</b> melts like butter on the tongue, especially at this time of year. Perfect when you are cooking to impress, this little guy is a real show stopper.</p><br>
+    <a href="{% url 'recipes' %}" class="btn" role="button">View All Recipes >></a><br>
+      </center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{% static 'images/fishtacos.jpg' %}" alt="Our top recipes">
+    <div class="card-block">
+      <center><h2 class="card-title">Featured Recipe:<br>Baja Fish Tacos</h2>
+      <p class="card-text">Crunchy on the outside and delicate on the inside, this delicious recipe proves that fish tacos are tacos - but better. </p><br>
+       <a href="recipe/baja-fish-tacos" class="btn" role="button">Get Cooking >></a><br>
+      </center>
+
+    </div>
+  </div>
+</div>
+        </div>
+    </div></div>
+ <br><br> <br><br>
+	
+	{% endblock %}
